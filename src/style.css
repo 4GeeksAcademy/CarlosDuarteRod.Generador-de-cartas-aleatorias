@@ -1,15 +1,54 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-
 body {
-    width: 100%;
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.card {
-
-}
+    background-color: #088a08;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 600px;
+  }
+  
+  
+  .simbolos2 {
+    font-size: 3rem;
+    background-color: #fff;
+  }
+  
+  .card-body {
+    text-align: center;
+    font-size: 6rem;
+    background-color: #fff;
+  }
+  
+  .numero {
+    display: inline-block;
+    background-color: #fff;
+    font-size: 5rem;
+  }
+  
+  .card-bot {
+    text-align: start;
+    margin-top: 1.5rem;
+    transform: rotate(180deg);
+    background-color: #fff;
+  }
+  
+  .simbolos {
+    font-size: 3rem;
+    background-color: #fff;
+  }
+  .red {
+    color: red;
+  }
+  
+  .black {
+    color: black;
+  }
+ 
