@@ -17,8 +17,9 @@ body {
   
   
   .simbolos2 {
-    font-size: 3rem;
+    font-size: 7rem;
     background-color: #fff;
+    margin-left: 10px;
   }
   
   .card-body {
@@ -30,7 +31,7 @@ body {
   .numero {
     display: inline-block;
     background-color: #fff;
-    font-size: 5rem;
+    font-size: 8rem;
   }
   
   .card-bot {
@@ -41,8 +42,9 @@ body {
   }
   
   .simbolos {
-    font-size: 3rem;
+    font-size: 7rem;
     background-color: #fff;
+    margin-left: 10px;
   }
   .red {
     color: red;

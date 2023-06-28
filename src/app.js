@@ -4,9 +4,11 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { doc } from "prettier";
 
 window.onload = function() {
   //write your code here
+  
   let simbolos = document.querySelector(".simbolos");
   let numeroIndex = document.querySelector(".numero");
   let simbolos2 = document.querySelector(".simbolos2");
@@ -22,11 +24,21 @@ window.onload = function() {
   simbolos.innerHTML = arrayaleatorio;
   simbolos2.innerHTML = arrayaleatorio;
   numeroIndex.innerHTML = numeroAleatorio;
-
-  color.classList.remove("red","black");
-  if(arrayaleatorio === "♦" || arrayaleatorio === "♥") 
-    color.classList.add("red");
-  else color.classList.add("black");
-
-  return (arrayaleatorio, numeroAleatorio);
+  
+  if (arrayaleatorio === "♦" || arrayaleatorio === "♥") {
+    simbolos2.classList.add("red");
+    simbolos.classList.add("red");
+  } else {
+    simbolos2.classList.add("black");
+    simbolos.classList.add("black");
+  }
 };
+
+
+let boton = document.querySelector ("#boton");
+boton.addEventListener ("click", function (){
+  onload();
+});
+
+
+setInterval(onload, 10000);
