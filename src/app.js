@@ -21,10 +21,6 @@ window.onload = function() {
   let arrayaleatorio = arraySimbolos[Math.floor(Math.random() * arraySimbolos.length)];
 
 
-  simbolos.innerHTML = arrayaleatorio;
-  simbolos2.innerHTML = arrayaleatorio;
-  numeroIndex.innerHTML = numeroAleatorio;
-  
   if (arrayaleatorio === "♦" || arrayaleatorio === "♥") {
     simbolos2.classList.add("red");
     simbolos.classList.add("red");
@@ -32,6 +28,11 @@ window.onload = function() {
     simbolos2.classList.add("black");
     simbolos.classList.add("black");
   }
+
+  simbolos.innerHTML = arrayaleatorio;
+  simbolos2.innerHTML = arrayaleatorio;
+  numeroIndex.innerHTML = numeroAleatorio;
+  
 };
 
 
@@ -39,6 +40,5 @@ let boton = document.querySelector ("#boton");
 boton.addEventListener ("click", function (){
   onload();
 });
-
 
 setInterval(onload, 10000);
